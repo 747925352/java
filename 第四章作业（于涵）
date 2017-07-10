@@ -1,0 +1,202 @@
+package java43;
+
+import java.util.Scanner;
+
+public class swPlane {
+
+	public static void main(String[] args) {
+		int money1 = 5000;
+		int money2 = 8000;
+		Scanner input = new Scanner(System.in);
+		System.out.print("Please enter the month you want have the trip:");
+		int month = input.nextInt();
+
+switch (month) {
+		case 4:
+		case 5:
+		case 6:
+		case 7:
+		case 8:
+		case 9:
+		case 10:
+			System.out.print("Please enter your choice, the first class or second class");
+			String classes = input.next();
+			if (classes.contentEquals("first class")) {
+				double price = money1 * 0.9;
+				System.out.println("You should pay:" + price);
+			} else {
+				double price = money2 * 0.8;
+				System.out.println("You should pay:" + price);
+			}
+
+			break;
+		case 1:
+		case 2:
+		case 3:
+		case 11:
+		case 12:
+			System.out.print("Please enter your choice, the first class or second class");
+			classes = input.next();
+			if (classes.contentEquals("first class")) {
+				double price = money1 * 0.5;
+				System.out.println("You should pay:" + price);
+			} else {
+				double price = money2 * 0.4;
+				System.out.println("You should pay:" + price);
+				break;
+			}
+		}
+
+	}
+}
+
+package java43;
+
+import java.util.Scanner;
+
+public class caculate {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.print("Please enter the first number:");
+		double num1 = input.nextDouble();
+
+		System.out.print("Please enter the operation number:");
+		char oper = input.next().charAt(0);
+
+		System.out.print("Please enter the second number:");
+		double num2 = input.nextDouble();
+		double re = 2;
+		switch (oper) {
+		case '+':
+			re = num1 + num2;
+			break;
+		case '-':
+			re = num1 - num2;
+			break;
+		case '*':
+			re = num1 * num2;
+			break;
+		case '/':
+			if (num1 == 0) {
+				System.out.print("dinominate can not be negative");
+				break;
+			} else {
+				re = num1 / num2;
+			}
+
+			break;
+		case '%':
+			re = num1 % num2;
+			break;
+		default:
+			System.out.println("Please enter the correct number");
+			break;
+		}
+		System.out.printf("%.2f %c%.2f=%.2f", num1, oper, num2, re);
+	}
+
+}
+
+
+
+		
+package java43;
+
+import java.util.Scanner;
+
+public class swPlane {
+
+	public static void main(String[] args) {
+		int money1 = 5000;
+		int money2 = 8000;
+		Scanner input = new Scanner(System.in);
+		System.out.print("Please enter the month you want have the trip:");
+		int month = input.nextInt();
+		switch (month) {
+		case 4:
+		case 5:
+		case 6:
+		case 7:
+		case 8:
+		case 9:
+		case 10:
+			System.out.print("Please enter your choice, the first class or second class");
+			String classes = input.next();
+			if (classes.contentEquals("first class")) {
+				double price = money1 * 0.9;
+				System.out.println("You should pay:" + price);
+			} else {
+				double price = money2 * 0.8;
+				System.out.println("You should pay:" + price);
+			}
+
+			break;
+		case 1:
+		case 2:
+		case 3:
+		case 11:
+		case 12:
+			System.out.print("Please enter your choice, the first class or second class");
+			classes = input.next();
+			if (classes.contentEquals("first class")) {
+				double price = money1 * 0.5;
+				System.out.println("You should pay:" + price);
+			} else {
+				double price = money2 * 0.4;
+				System.out.println("You should pay:" + price);
+				break;
+			}
+		}
+
+	}
+}
+package java43;
+import java.util.*;
+public class award {
+
+	public static void main(String[] args) {
+		System.out.print("Please enter Xiaoming's score:");
+		Scanner input=new Scanner(System.in);
+		double score=input.nextDouble();
+		if(score==100){
+			System.out.print("Buy a car");
+		}else if(score>=90){
+			System.out.print("Buy a Mp4");
+		}else if(score>=60){
+			System.out.print("Buy a book");
+		}else{
+			System.out.print("Nothing");
+		}
+
+	}
+
+}
+package java43;
+
+import java.util.Scanner;
+
+public class week {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Please enter one day of the week using number ");
+		int weekd = input.nextInt();
+		switch (weekd) {
+		case 1:
+		case 3:
+		case 5:
+			System.out.println("program code");
+			break;
+		case 2:
+		case 4:
+			System.out.println("rest");
+			break;
+		case 7:
+			System.out.println("learn English");
+			break;
+		}
+
+	}
+
+}
